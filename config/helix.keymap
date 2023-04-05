@@ -23,7 +23,6 @@ As such, those are in use within the default layer at this time.*/
 / {
        keymap {
               compatible = "zmk,keymap";
- 
               default_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
  //|ESC | N1 | N2 | N3 | N4 | N5 |  |  |  | N6 | N7 | N8 | N9 | N0 | MINUS
@@ -32,6 +31,7 @@ As such, those are in use within the default layer at this time.*/
  //|LSHFT | Z | X | C | V | B | LEFT_BRACKET |  | RIGHT_BRACKET | N | M | COMMA | DOT | SLASH | RSHFT
  //|LCTRL | LWIN | LALT | TG(2) | TG(3) | ENTER | BACKSPACE |  | DEL | SPACE | MO(1) | GRAVE | PSCRN | BACKSLASH | RCTRL
  // ---------------------------------------------------------------------------------------------------------------------------------
+                     label = "Qwerty";
                      bindings = <
        &kp ESC	&kp N1	&kp N2	&kp N3	&kp N4	&kp N5				&kp N6	&kp N7	&kp N8	&kp N9	&kp N0	&kp MINUS
        &kp TAB	&kp Q	&kp W	&kp E	&kp R	&kp T				&kp Y	&kp U	&kp I	&kp O	&kp P	&kp EQUAL
@@ -40,6 +40,7 @@ As such, those are in use within the default layer at this time.*/
        &kp LCTRL	&kp LWIN	&kp LALT	&tog 2	&tog 3	&kp ENTER	&kp BACKSPACE		&kp DEL	&kp SPACE	&mo 1	&kp GRAVE	&kp PSCRN	&kp BACKSLASH	&kp RCTRL
                      >;
               };
+
               lower_layer {
  // ---------------------------------------------------------------------------------------------------------------------------------
  //TRANS	F1	F2	F3	F4	F5				F6	F7	F8	F9	F10	TRANS
@@ -48,6 +49,7 @@ As such, those are in use within the default layer at this time.*/
  //TRANS	BT_CLR									C_PREV	C_VOL_DN	C_NEXT		TRANS
  //TRANS	TRANS	TRANS	TG(2)	TG(3)	TRANS	TRANS		TRANS	TRANS	TRANS	TRANS	TRANS	TRANS	TRANS
  // ---------------------------------------------------------------------------------------------------------------------------------
+                     label = "Func";
                      bindings = <
 &trans	&kp F1	&kp F2	&kp F3	&kp F4	&kp F5				&kp F6	&kp F7	&kp F8	&kp F9	&kp F10	&trans
 &trans	&kp F11	&kp F12	&none	&none	&none				&none	&none	&none	&none	&kp C_PLAY_PAUSE	&trans
@@ -64,6 +66,7 @@ As such, those are in use within the default layer at this time.*/
  // TRANS	TRANS	TRANS	TRANS	TRANS	TRANS					LEFT	DOWN	RIGHT		TRANS
  // TRANS	TRANS	TRANS	TG(2)	TG(3)	TRANS	TRANS		TRANS	TRANS		TRANS	TRANS	TRANS	TRANS
  // ---------------------------------------------------------------------------------------------------------------------------------
+                     label = "Navi";
                      bindings = <
        &trans	&trans	&trans	&trans	&trans	&trans				&none	&kp INS	&kp HOME	&kp PG_UP	&none	&trans
        &trans	&trans	&trans	&trans	&trans	&trans				&none	&kp DEL	&kp END	&kp PG_DN	&none	&trans
@@ -80,6 +83,7 @@ As such, those are in use within the default layer at this time.*/
  // TRANS									KP_N0	KP_MULTIPLY	KP_COMMA	KP_DOT	KP_DIVIDE	TRANS
  // TRANS	TRANS	TRANS	TG(2)	TG(3)	TRANS	TRANS		TRANS	TRANS		TRANS	TRANS	TRANS	TRANS
  // ---------------------------------------------------------------------------------------------------------------------------------
+                     label = "NumPad";
                      bindings = <
        &trans	&none	&none	&none	&none	&none				&none	&kp KP_N7	&kp KP_N8	&kp KP_N9	&none	&kp KP_MINUS
        &trans	&none	&none	&none	&none	&none				&none	&kp KP_N4	&kp KP_N5	&kp KP_N6	&none	&kp KP_PLUS
